@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEATERA</title>
+    <link rel="stylesheet" href="tugas_2.css">
+</head>
+
+<body>
+    <div class="border">
+        <div class="space">
+        <h1>🪑SEATERA</h1>
+        <p class="font">Reservasi kursi kuliah</p>
+        <a href="denah kelas.png" target="_blank">
+            <p>👨🏻‍🏫 Denah Kelas</p></a><br>
+        </div>
+
+    <form action="#">
+        
+            <!-- NAMA -->
+             <div class="space2">
+            <label for="nama" class="label">Nama</label><br> 
+            <input type="text" name="nama" id="nama" placeholder="Masukkan nama kamu">
+             </div> <br>
+
+            <!-- NIM -->
+             <div class="space2">
+            <label for="nim" class="label">NIM</label><br> 
+            <input type="text" name="nim" id="nim" placeholder="Masukkan NIM kamu">
+             </div> <br>
+
+            <!-- PASSWORD -->
+             <div class="space2">
+            <label for="password" class="label">Password</label><br> 
+            <input type="password" name="password" id="password" placeholder="Masukkan password Satu Mahasiswa">
+             </div> <br>
+
+            <!-- MATKUL: CHECKBOX -->
+             <div class="space2 label">
+            <label for="matkul" class="label">Pilih Mata Kuliah</label><br>
+             <div class="checkbox-group">
+                <div id="font">
+            <input type="checkbox" name="matkul" value="matdas">
+            <label>Matematika Dasar</label><br>
+            <input type="checkbox" name="matkul" value="pti">
+            <label>Pengantar Teknologi Informasi</label><br>
+            <input type="checkbox" name="matkul" id="daspro">
+            <label>Dasar Pemrograman</label><br>
+            <input type="checkbox" name="matkul" value="proweb">
+            <label>Pemrograman Web</label><br>
+            <input type="checkbox" name="matkul" value="oak">
+            <label>Organisasi & Arsitektur Komputer</label>
+                </div>
+             </div> </div> <br>
+
+            <!-- RUANGAN: SELECT OPTION -->
+             <div class="space2">
+            <label for="ruangan" class="label">Ruangan</label><br>
+            <select name="ruangan" id="ruangan">
+                <option value="" >- Pilih Ruangan -</option>
+                <option value="c-101">C-101</option>
+                <option value="c-102">C-102</option>
+                <option value="c-103">C-103</option>
+                <option value="c-104">C-104</option>
+                <option value="c-105">C-105</option>
+                <option value="c-106">C-106</option>
+                <option value="d-101">D-101</option>
+                <option value="d-102">D-102</option>
+                <option value="d-103">D-103</option>
+                <option value="d-104">D-104</option>
+                <option value="d-105">D-105</option>
+                <option value="d-106">D-106</option>
+            </select>
+             </div><br>
+
+            <!-- HARI: SELECT OPTION -->
+             <div class="space2">
+            <label for="hari" class="label">Hari</label><br>
+            <select name="hari" id="hari">
+                <option value="">- Pilih Hari -</option>
+                <option value="senin">Senin</option>
+                <option value="selasa">Selasa</option>
+                <option value="rabu">Rabu</option>
+                <option value="kamis">Kamis</option>
+                <option value="jumat">Jumat</option>
+            </select>
+             </div> <br>
+
+            <!-- JAM: SELECT OPTION -->
+             <div class="space2">
+            <label for="jam" class="label">Jam</label><br>
+            <select name="jam" id="jam">
+                <option value="">- Pilih Jam -</option>
+                <option value="08:00-10:30">08:00-10:30</option>
+                <option value="10:30-13:00">10:30-13:00</option>
+                <option value="10:30-12:10">10:30-12:10</option>
+            </select>
+             </div> <br>
+
+            <!-- SISI KURSI: RADIO -->
+             <div class="space2">
+            <label for="sisi" class="label">Sisi Kursi</label><br>
+             <div class="radio-group label">
+            <input type="radio" name="sisi" value="kanan">
+            <label>Sisi Kanan</label><br><br>
+            <input type="radio" name="sisi" value="kiri">
+            <label>Sisi Kiri</label>
+             </div> </div> <br>
+
+            <!-- KURSI: RADIO -->
+             <div class="space2">
+            <label for="sisi" class="label">Pilih Kursi</label> <br>
+             <div class="seat-jarak radio-group">  
+            
+            <!-- gunakan id dan for agar input terhubung dengan label, agar class input:chcked bekerja -->
+            <input type="radio" id="a1" name="kursi" value="a1" class="seat-check seat-circle">
+            <label for="a1">
+                <span class="seat-border">A1</span>
+            </label>
+            <input type="radio" id="a2" name="kursi" value="a2" class="seat-check seat-circle">
+            <label for="a2">
+                <span class="seat-border">A2</span>
+            </label>
+            <input type="radio" id="a3" name="kursi" value="a3" class="seat-check seat-circle">
+            <label for="a3">
+                <span class="seat-border">A3</span>
+            </label>
+            <input type="radio" id="a4" name="kursi" value="a4" class="seat-check seat-circle">
+            <label for="a4">
+                <span class="seat-border">A4</span>
+            </label>
+            <input type="radio" id="a5" name="kursi" value="a5" class="seat-check seat-circle">
+            <label for="a5">
+                <span class="seat-border">A5</span>
+            </label>
+
+            <input type="radio" id="b1" name="kursi" value="b1" class="seat-check seat-circle">
+            <label for="b1">
+                <span class="seat-border">B1</span>
+            </label>
+            <input type="radio" id="b2" name="kursi" value="b2" class="seat-check seat-circle">
+            <label for="b2">
+                <span class="seat-border">B2</span>
+            </label>
+            <input type="radio" id="b3" name="kursi" value="b3" class="seat-check seat-circle">
+            <label for="b3">
+                <span class="seat-border">B3</span>
+            </label>
+            <input type="radio" id="b4" name="kursi" value="b4" class="seat-check seat-circle">
+            <label for="b4">
+                <span class="seat-border">B4</span>
+            </label>
+            <input type="radio" id="b5" name="kursi" value="b5" class="seat-check seat-circle">
+            <label for="b5">
+                <span class="seat-border">B5</span>
+            </label>
+            
+            <input type="radio" id="c1" name="kursi" value="c1" class="seat-check seat-circle">
+            <label for="c1">
+                <span class="seat-border">C1</span>
+            </label>
+            <input type="radio" id="c2" name="kursi" value="c2" class="seat-check seat-circle">
+            <label for="c2">
+                <span class="seat-border">C2</span>
+            </label>
+            <input type="radio" id="c3" name="kursi" value="c3" class="seat-check seat-circle">
+            <label for="c3">
+                <span class="seat-border">C3</span>
+            </label>
+            <input type="radio" id="c4" name="kursi" value="c4" class="seat-check seat-circle">
+            <label for="c4">
+                <span class="seat-border">C4</span>
+            </label>
+            <input type="radio" id="c5" name="kursi" value="c5" class="seat-check seat-circle">
+            <label for="c5">
+                <span class="seat-border">C5</span>
+            </label>
+
+            <input type="radio" id="d1" name="kursi" value="d1" class="seat-check seat-circle">
+            <label for="d1">
+                <span class="seat-border">D1</span>
+            </label>
+            <input type="radio" id="d2" name="kursi" value="d2" class="seat-check seat-circle">
+            <label for="d2">
+                <span class="seat-border">D2</span>
+            </label>
+            <input type="radio" id="d3" name="kursi" value="d3" class="seat-check seat-circle">
+            <label for="d3">
+                <span class="seat-border">D3</span>
+            </label>
+            <input type="radio" id="d4" name="kursi" value="d4" class="seat-check seat-circle">
+            <label for="d4">
+                <span class="seat-border">D4</span>
+            </label>
+            <input type="radio" id="d5" name="kursi" value="d5" class="seat-check seat-circle">
+            <label for="d5">
+                <span class="seat-border">D5</span>
+            </label>
+
+            <input type="radio" id="e1" name="kursi" value="e1" class="seat-check seat-circle">
+            <label for="e1">
+                <span class="seat-border">E1</span>
+            </label>
+            <input type="radio" id="e2" name="kursi" value="e2" class="seat-check seat-circle">
+            <label for="e2">
+                <span class="seat-border">E2</span>
+            </label>
+            <input type="radio" id="e3" name="kursi" value="e3" class="seat-check seat-circle">
+            <label for="e3">
+                <span class="seat-border">E3</span>
+            </label>
+            <input type="radio" id="e4" name="kursi" value="e4" class="seat-check seat-circle">
+            <label for="e4">
+                <span class="seat-border">E4</span>
+            </label>
+            <input type="radio" id="e5" name="kursi" value="e5" class="seat-check seat-circle">
+            <label for="e5">
+                <span class="seat-border">E5</span>
+            </label>
+             </div> </div> <br>
+
+            <!-- PESAN: TEXTAREA -->
+             <div class="space2">
+            <label for="pesan" class="label">Pesan</label><br>
+            <textarea name="textarea" id="pesan" placeholder="Masukkan pesan tambahan"></textarea>
+             </div> <br>
+
+            <!-- SUBMIT -->
+            <input type="submit" value="RESERVASI KURSI" class="label">
+
+            <p class="footer">&copy;🪑SEATERA 2026-Rizky Ramadhansyah Hutagalung</p>
+    </form>
+    </div>
+</body>
+</html>

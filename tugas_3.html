@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI CALCULATOR</title>
+    <link rel="stylesheet" href="tugas_3.css">
+</head>
+
+<body>
+        <div class="border">
+
+    <h2>🔢MINI CALCULATOR</h3><br>
+
+    <input type="number" name="bilangan1" id="bilangan1" placeholder="Bilangan 1"> <br>
+    <input type="number" name="bilangan2" id="bilangan2" placeholder="Bilangan 2"> 
+
+        <div class="tombol-operasi">
+    <button type="button" onclick="operasi('+')">+</button>
+    <button type="button" onclick="operasi('-')">-</button>
+    <button type="button" onclick="operasi('*')">*</button>
+    <button type="button" onclick="operasi('/')">/</button> <br><br>
+        </div>
+    
+    <input type="number" id="output" placeholder="Hasil">
+
+    <script>
+        function operasi(operator) {
+            let bilangan1 = Number(document.getElementById("bilangan1").value);
+            let bilangan2 = Number(document.getElementById("bilangan2").value);
+            let hasil;
+
+            if (operator == '+') {
+                hasil = bilangan1 + bilangan2;
+            }
+            else if (operator == '-') {
+                hasil = bilangan1 - bilangan2;
+            }
+            else if (operator == '*') {
+                hasil = bilangan1 * bilangan2;
+            }
+            else if (operator == '/') {
+                hasil = bilangan1 / bilangan2;
+            }
+
+            document.getElementById("output").value = hasil;
+        }
+    </script>
+</body>
+</html>

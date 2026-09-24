@@ -1,0 +1,156 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(43, 83, 171) ;
+    color: #000;
+}
+
+/* Border */
+.border {
+    /* Ketentuan posisi border */
+    width: 500px;
+    margin: 50px auto;
+    padding: 35px;
+
+    /* Hiasan border */
+    border-radius: 30px;
+    box-shadow: 0 7px 25px #000;
+    background-color:  #EAF2F8;
+}
+    
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 35px;
+    letter-spacing: 7px;
+}
+
+p.font {
+    font-size: 15.5px;
+    color: #313131;
+}
+
+/* Mengatur jarak spasi baris h1 dengan p */
+.space {
+    text-align: center;
+    line-height: 16.5px;
+}
+
+.space2 {
+    line-height: 7px;
+}
+
+input[type="text"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    border: 1px solid #0b1525;
+    border-radius: 20px;
+
+    background: #EAF2F8;
+    color: #525151;
+    outline: none;   
+}
+
+/* untuk mengatur tata letak label */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+#font {
+    font-size: 14px;
+}
+
+/* ketika diklik, border kotak akan berubah warna */
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border: 1px solid #0d48ac;
+}
+
+/* untuk latar belakang kotak */
+.radio-group,
+.checkbox-group {
+    margin-top: 5px;
+    padding: 12px;
+
+    background: #EAF2F8;
+    border-radius: 20px;
+    border: 1px solid #0b1525;
+}
+
+/* agar poin pada check inline */
+.radio-group label, .checkbox-group label {
+    display: inline;
+    margin: 0;
+}
+
+/* jarak antar seat */
+.seat-jarak {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+/* untuk membuat border seat */
+.seat-border {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* interaktif klik warna saat seat diklik */
+.seat-check:checked + label span {
+    background: #1e539e;
+    color: white;
+    border-color: #0e3665;
+}
+
+/* agar menghilangkan button circle */
+.seat-circle {
+    display: none;
+}
+
+textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #012179;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    /* mengubah mouse menjadi tangan menunjuk */
+    cursor: pointer;
+}
+
+/* ketika tombol disentuh mouse (berubah warna) */
+input[type="submit"]:hover {
+    background: #011448;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 18px;
+    color: #000;
+    font-size: 12.3px;
+}

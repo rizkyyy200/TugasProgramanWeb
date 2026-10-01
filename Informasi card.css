@@ -1,0 +1,19 @@
+.informasi {
+    border-top: 1px solid #ddd;
+    padding: 35px 0;
+}
+
+.informasi h2 {
+    margin-bottom: 5px;
+}
+
+.informasi p {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.footer {
+    color: #6c757d;
+    margin-bottom: 30px;  
+    font-size: smaller; 
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proweb</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="Informasi card.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+    @media only screen and (max-width: 758px) {
+      .btn-primary, .btn-outline-success {
+        margin-top: 10px;
+        margin-left: 0 !important;
+      }
+    }
+    </style>
+</head>
+
+<body>
+    <section>
+
+    <!-- NAVBAR -->
+    <div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#" style="font-family: Roboto, sans-serif;">
+                Proweb
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                 style="font-family: Outfit, sans-serif;">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href="#"
+                           role="button"
+                           data-bs-toggle="dropdown">
+                            Tutorial
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">PHP</a></li>
+                            <li><a class="dropdown-item" href="#">MySQL</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Profil</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled me-3" href="#">Hubungi</a>
+                    </li>
+
+                </ul>
+
+                <form class="d-flex flex-column flex-lg-row" role="search">
+                <button class="btn btn-outline-success" type="submit">Daftar</button>
+                <button class="btn btn-primary mt-2 mt-lg-0 ms-lg-2" type="submit">Masuk</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <!-- KOLOM PERTAMA -->
+             <div class="col align-self-center ">
+                <h1 style="font-family: Sofia Sans, sans-serif;">Hai!<br>Selamat Datang di Proweb</h1>
+                <p style="font-family: Roboto, sans-serif;">Belajar pemrograman web mulai dari HTML, CSS, JavaScript, PHP dan MySQL</p>
+                <a href="#" style="font-family: Outfit, sans-serif;" class="btn btn-success mb-4">
+                    Mulai Sekarang
+                </a>
+             </div>
+             <!-- KOLOM KEDUA -->
+             <div class="col d-none d-lg-block d-xl-block">
+                <img src="Gambar/Ikon Proweb" width="100%" alt="ikon proweb">
+             </div>
+        </div>
+
+        <section class="informasi">
+
+    <div class="container">
+      <div class="row g-4">
+        <h2 style="font-family: Sofia Sans, sans-serif;">Materi Pemrograman Web</h2>
+        <p style="font-family: Roboto, sans-serif;">Dapatkan bahan materi seputar dunia programming</p>
+
+        <!-- Card 1 -->
+         <div class="col">
+            <div class="card" style="width: 18rem; border-radius: 15px;">
+               <img src="Gambar/HTML.png" class="card-img-top" style="border-radius: 15px 15px 0 0;" alt="Gambar HTML">
+               <div class="card-body">
+                 <h5 class="card-title" style="font-family: Sofia Sans, sans-serif;">Belajar HTML</h5>
+                 <p class="card-text" style="font-family: Roboto, sans-serif;">HTML adalah bahasa standar berupa serangkaian kode untuk membuat dan menyusun kerangka sebuah halaman website.</p>
+                 <a href="#" class="btn btn-primary" style="font-family: Outfit, sans-serif;">Baca Selengkapnya</a>
+               </div>
+            </div>
+          </div>
+
+        <!-- Card 2 -->
+         <div class="col">
+            <div class="card" style="width: 18rem; border-radius: 15px;">
+                <img src="Gambar/CSS.png" class="card-img-top" style="border-radius: 15px 15px 0 0;" alt="Gambar HTML">
+                <div class="card-body">
+                 <h5 class="card-title" style="font-family: Sofia Sans, sans-serif;">Belajar CSS</h5>
+                 <p class="card-text" style="font-family: Roboto, sans-serif;">CSS adalah bahasa yang digunakan untuk mengatur tampilan, warna, layout, dan desain agar halaman HTML terlihat menarik.</p>
+                 <a href="#" class="btn btn-primary" style="font-family: Outfit, sans-serif;">Baca Selengkapnya</a>
+                </div>
+            </div>
+         </div>
+
+        <!-- Card 3 -->
+         <div class="col">
+            <div class="card" style="width: 18rem; border-radius: 15px;">
+                <img src="Gambar/Javascript.png" class="card-img-top" style="border-radius: 15px 15px 0 0;" alt="Gambar HTML">
+                <div class="card-body">
+                 <h5 class="card-title" style="font-family: Sofia Sans, sans-serif;">Belajar JavaScript</h5>
+                 <p class="card-text" style="font-family: Roboto, sans-serif;">JavaScript (JS) adalah bahasa pemrograman yang digunakan untuk membuat halaman website menjadi hidup dan interaktif.</p>
+                 <a href="#" class="btn btn-primary" style="font-family: Outfit, sans-serif;">Baca Selengkapnya</a>
+                </div>
+            </div>
+         </div>
+
+      </div>
+    </div>
+        </section>
+
+    <footer class="py-4">
+    <p class="mb-0" style="font-family: Outfit, sans-serif;">
+        &copy;2026 Proweb - Rizky Ramadhansyah Hutagalung
+    </p>
+    </footer>
+
+    </section>
+
+        <script src="bootstrap.bundle.js"></script>
+
+    </div>
+</body>
+</html>
